@@ -1,0 +1,1 @@
+console.log("Edgaro kol kas čia nėra");
