@@ -1,5 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
 body {
+
     background-color: antiquewhite;
+    height: 100vh;
 }
 
 h1 {
@@ -10,6 +18,198 @@ h1 {
     font-weight: 700;
     font-style: normal;
     color:rgb(52, 50, 50);
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+
+    
+}
+
+.navbar1 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    box-sizing: border-box;
+    height: 2%;
+    padding: 1%;
+    // background-color:rgb(52, 50, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 63%;
+    list-style: none;
+}
+
+a {
+    // color: antiquewhite;
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    
+}
+
+a:hover {
+    color: red!important;
+}
+
+.results-box {
+    display: grid;
+    align-items: start;
+    justify-content: center;
+    height: 97%;
+    width: 15%;
+    background-color: lightblue;
+}
+
+.description-box {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 1%;
+
+    justify-content:flex-start;
+    height:97%;
+    width: 15%;
+    background-color: rgb(182, 140, 161);
+}
+
+.game-box {
+    position: relative;
+    height: 97%;
+    width: 70%;
+    background-color: rgb(214, 208, 134);
+
+}
+
+.container {
+    display: flex;
+    height:100%;
+    width: 100%;
+}
+
+.msgbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2vh;
+
+}
+
+.inpbox {
+    width: 35%;
+    height: 5vh;
+    padding: 5px;       /* Add some padding for better appearance */
+    box-sizing: border-box; /* Ensure padding is included in height and width */
+    font-size: 16px;    /* Adjust font size */
+    border: 1px solid #d4632a; /* Add border */
+    border-radius: 4px; /* Rounded corners */
+            /* Optional styles for focus effect */
+    transition: border-color 0.3s;
+    resize: none;
+}
+
+.msgbox {
+    vertical-align: top;
+    line-height: 1.2;
+    width: 35%;
+    height: 20vh;
+    padding: 5px;       /* Add some padding for better appearance */
+    box-sizing: border-box; /* Ensure padding is included in height and width */
+    font-size: 16px;    /* Adjust font size */
+    border: 1px solid #d4632a; /* Add border */
+    border-radius: 4px; /* Rounded corners */
+            /* Optional styles for focus effect */
+    transition: border-color 0.3s;
+    resize: none;
+
+
+
+}
+
+.msgbox:focus {
+    input:focus {
+        border-color: #007BFF; /* Change border color on focus */
+        outline: none;         /* Remove default outline */
+    }
+}
+
+.msgsend {
+    width: 35%;
+    height: 5vh;
+    padding: 5px;       /* Add some padding for better appearance */
+    box-sizing: border-box; /* Ensure padding is included in height and width */
+    font-size: 16px;    /* Adjust font size */
+    border: 1px solid #d4632a; /* Add border */
+    border-radius: 4px; /* Rounded corners */
+            /* Optional styles for focus effect */
+    transition: border-color 0.3s;
+    resize: none;
+    color: white;
+    background-color: #d4632a;
+}
+
+.msgsend:hover {
+    background-color: #7a3919;
+}
+
+.contacts {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.btn1 {
+    margin-top: 2vh;
+    width: 13.3vw;
+    height: 5vh;
+    margin-bottom: 2vh;
+}
+
+.btn2 {
+    width: 10vh;
+    height: 10vh;
+}
+
+.rez-lentele {
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4vh;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.description-p {
+    padding: 2vh;
+    text-align:left;
+}
+
+.description-name {
+    width: 13vw;
+    height: 5vh;
+    padding-left: 2px;
+}
+
+.gamebox-toprez {
+
+    
+}
+
+.ptop-rez {
     
 }
