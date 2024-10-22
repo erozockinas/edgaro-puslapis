@@ -30,7 +30,6 @@ h1 {
     box-sizing: border-box;
     height: 2%;
     padding: 1%;
-    // background-color:rgb(52, 50, 50);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +44,7 @@ h1 {
 }
 
 a {
-    // color: antiquewhite;
+
     color: black;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
@@ -58,8 +57,7 @@ a:hover {
 }
 
 .results-box {
-    display: grid;
-    align-items: start;
+    display: flex;
     justify-content: center;
     height: 97%;
     width: 15%;
@@ -105,12 +103,11 @@ a:hover {
 .inpbox {
     width: 35%;
     height: 5vh;
-    padding: 5px;       /* Add some padding for better appearance */
-    box-sizing: border-box; /* Ensure padding is included in height and width */
-    font-size: 16px;    /* Adjust font size */
-    border: 1px solid #d4632a; /* Add border */
-    border-radius: 4px; /* Rounded corners */
-            /* Optional styles for focus effect */
+    padding: 5px;      
+    box-sizing: border-box; 
+    font-size: 16px;    
+    border: 1px solid #d4632a; 
+    border-radius: 4px; 
     transition: border-color 0.3s;
     resize: none;
 }
@@ -120,12 +117,11 @@ a:hover {
     line-height: 1.2;
     width: 35%;
     height: 20vh;
-    padding: 5px;       /* Add some padding for better appearance */
-    box-sizing: border-box; /* Ensure padding is included in height and width */
-    font-size: 16px;    /* Adjust font size */
-    border: 1px solid #d4632a; /* Add border */
-    border-radius: 4px; /* Rounded corners */
-            /* Optional styles for focus effect */
+    padding: 5px;       
+    box-sizing: border-box; 
+    font-size: 16px;    
+    border: 1px solid #d4632a; 
+    border-radius: 4px; 
     transition: border-color 0.3s;
     resize: none;
 
@@ -135,20 +131,20 @@ a:hover {
 
 .msgbox:focus {
     input:focus {
-        border-color: #007BFF; /* Change border color on focus */
-        outline: none;         /* Remove default outline */
+        border-color: #007BFF; 
+        outline: none;         
     }
 }
 
 .msgsend {
     width: 35%;
     height: 5vh;
-    padding: 5px;       /* Add some padding for better appearance */
-    box-sizing: border-box; /* Ensure padding is included in height and width */
-    font-size: 16px;    /* Adjust font size */
-    border: 1px solid #d4632a; /* Add border */
-    border-radius: 4px; /* Rounded corners */
-            /* Optional styles for focus effect */
+    padding: 5px;       
+    box-sizing: border-box; 
+    font-size: 16px;   
+    border: 1px solid #d4632a; 
+    border-radius: 4px; 
+            
     transition: border-color 0.3s;
     resize: none;
     color: white;
@@ -207,9 +203,30 @@ p {
 
 .gamebox-toprez {
 
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+    
+
     
 }
 
 .ptop-rez {
     
+}
+
+#grez0, #grez1, #grez2, #grez3, #grez4, #grez5, #grez6, #grez7, #grez8, #grez9 {
+
+    margin-bottom: 4vh;
+    margin-left: 2.5vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.1vh;
+
+}
+
+.top10 {
+    text-align: center;
+    margin-bottom: 5vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
 }
