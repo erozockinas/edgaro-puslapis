@@ -12,17 +12,16 @@ const firebaseConfig = {
     appId: "1:521925741877:web:8aee0a3dc8e8f479e8907c"
 };
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
-// Event listener for the first button
+
 document.getElementById("myclick1").addEventListener('click', (event) => {
     document.getElementById("myclick1").disabled = true;
     document.getElementById("idh4").innerHTML = "";
     var time1 = Date.now();
 
-    // Create the second button
     var element = document.createElement('button');
     element.textContent = 'Pagauk';
     element.setAttribute('id', 'myclick2');
@@ -60,7 +59,6 @@ document.getElementById("myclick1").addEventListener('click', (event) => {
             inputValue="Svečias";
         }
 
-        // Insert data into the database
         const insertData = (key, value) => {
             set(ref(db, 'results/' + key), {
                 value
@@ -73,27 +71,20 @@ document.getElementById("myclick1").addEventListener('click', (event) => {
             });
         };
 
-        // Example usage
         insertData(inputValue, fSeconds);
     });
 });
 
-// Listen for changes in the database
 const myMessage = ref(db, "results");
 
 onValue(myMessage, (snapshot) => {
     let re = Object.entries(snapshot.val() || {});
     console.log(re);
 
-    // Sort the results by value
     re.sort((a, b) => a[1].value - b[1].value);
 
     for (let i = 0; i < re.length; i++) {
-        // console.log(re[i]);
-        // console.log(re[i][0]);
-        // console.log(re[i][1]);
 
-        // Duomenys i lentele
         document.getElementById('grez' + i).innerText = " " + `${re[i][0]}` + " " + `${re[i][1].value}` + " sek.";
     }
 });

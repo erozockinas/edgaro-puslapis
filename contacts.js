@@ -40,9 +40,6 @@ document.getElementById("submit1").addEventListener('click', (event)=> {
   
 });
     
-  
-  
-  
 
 function returnTime() {
   const d = new Date();
