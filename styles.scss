@@ -32,7 +32,9 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;              
+    width: 100%; 
+    
+
 }
 
 @media (max-width: 628px) {      
@@ -89,6 +91,8 @@ h1 {
     align-items: center;
     gap: 63%;
     list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 1000;
 }
 
 a {
@@ -272,3 +276,4 @@ p {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
 }
+

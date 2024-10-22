@@ -73,6 +73,8 @@ h1 {
   align-items: center;
   gap: 63%;
   list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 1000;
 }
 
 a {
