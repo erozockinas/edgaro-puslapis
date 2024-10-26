@@ -18,6 +18,12 @@ const db = getDatabase(app);
 
 
 document.getElementById("myclick1").addEventListener('click', (event) => {
+
+    if(document.getElementById('remove')){
+        document.getElementById('game-info').removeChild(document.getElementById('remove'));
+    }
+    
+
     document.getElementById("myclick1").disabled = true;
     document.getElementById("idh4").innerHTML = "";
     var time1 = Date.now();
